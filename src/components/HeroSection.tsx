@@ -33,6 +33,7 @@ const HeroSection = () => {
 
           <div className="flex flex-wrap gap-4">
             <motion.button
+              onClick={scrollToProjects}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-[#00E5FF] text-black font-display font-bold text-base md:text-lg px-8 py-4 brutal-border shadow-[4px_4px_0px_#FCE100] uppercase tracking-wider"
