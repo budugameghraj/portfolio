@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo+Black&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 330 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 108 100% 55%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 354 100% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 0%;
+    --input: 0 0% 20%;
+    --ring: 330 100% 50%;
+
+    --radius: 0px;
+
+    /* Custom neo-brutal tokens */
+    --neon-pink: 330 100% 50%;
+    --neon-cyan: 180 100% 50%;
+    --neon-green: 108 100% 55%;
+    --neon-yellow: 52 98% 49%;
+    --neon-orange: 354 100% 51%;
+
+    --border-brutal: 3px solid hsl(0 0% 0%);
+    --shadow-offset: 6px;
+
+    --font-display: 'Archivo Black', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 330 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 0%;
+    --sidebar-ring: 330 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .brutal-border {
+    border: 3px solid black;
+  }
+
+  .brutal-shadow-pink {
+    box-shadow: 6px 6px 0px hsl(var(--neon-pink));
+  }
+
+  .brutal-shadow-cyan {
+    box-shadow: 6px 6px 0px hsl(var(--neon-cyan));
+  }
+
+  .brutal-shadow-green {
+    box-shadow: 6px 6px 0px hsl(var(--neon-green));
+  }
+
+  .brutal-shadow-yellow {
+    box-shadow: 6px 6px 0px hsl(var(--neon-yellow));
+  }
+
+  .brutal-shadow-orange {
+    box-shadow: 6px 6px 0px hsl(var(--neon-orange));
+  }
+
+  .caution-tape {
+    background: repeating-linear-gradient(
+      -45deg,
+      hsl(var(--neon-yellow)),
+      hsl(var(--neon-yellow)) 20px,
+      hsl(0 0% 0%) 20px,
+      hsl(0 0% 0%) 40px
+    );
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes robot-shake {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    10% { transform: translateX(-8px) rotate(-5deg); }
+    20% { transform: translateX(8px) rotate(5deg); }
+    30% { transform: translateX(-6px) rotate(-3deg); }
+    40% { transform: translateX(6px) rotate(3deg); }
+    50% { transform: translateX(-4px) rotate(-2deg); }
+    60% { transform: translateX(4px) rotate(2deg); }
+    70% { transform: translateX(-2px) rotate(-1deg); }
+    80% { transform: translateX(2px) rotate(1deg); }
+    90% { transform: translateX(-1px) rotate(0deg); }
+  }
+
+  .animate-robot-shake {
+    animation: robot-shake 0.6s ease-out;
+  }
+
+  @keyframes spin-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 1.5s linear infinite;
+  }
+
+  @keyframes path-draw {
+    0% { stroke-dashoffset: 1; }
+    100% { stroke-dashoffset: 0; }
+  }
+
+  @keyframes slide-right {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+
+  .animate-slide-right {
+    animation: slide-right 1s ease-in-out;
+  }
+}
