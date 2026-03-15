@@ -13,20 +13,21 @@ The codebase for my personal portfolio. Designed to showcase my journey as a 2nd
 
 ## TECHNICAL STACK USED TO CREATE THIS PORTFOLIO (done using Lovable)
 
-**FRONTEND:** React | TypeScript | Tailwind CSS
-**MOTION & 3D:** Framer Motion | Spline
-**DEPLOYMENT:** Vercel
+**FRONTEND:** 
+React | TypeScript | Tailwind CSS
+**MOTION & 3D:**
+Framer Motion | Spline
+**DEPLOYMENT:** 
+Vercel
 
 ---
 
 ## FEATURED PROJECTS 
 
-**SWIPETCHA : **
-
+**SWIPETCHA**
 A smart CAPTCHA SaaS built for a hackathon, replacing traditional verification with fluid, motion-based UX.
 
-**DATA VISUALIZATION ENGINE : **
-
+**DATA VISUALIZATION ENGINE **
 An ongoing build designed to interpret and render complex datasets into intuitive visual structures.
 
 ---
