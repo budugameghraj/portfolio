@@ -21,10 +21,12 @@ The codebase for my personal portfolio. Designed to showcase my journey as a 2nd
 
 ## FEATURED PROJECTS 
 
-**SWIPETCHA**
+**SWIPETCHA : **
+
 A smart CAPTCHA SaaS built for a hackathon, replacing traditional verification with fluid, motion-based UX.
 
-**DATA VISUALIZATION ENGINE**
+**DATA VISUALIZATION ENGINE : **
+
 An ongoing build designed to interpret and render complex datasets into intuitive visual structures.
 
 ---
