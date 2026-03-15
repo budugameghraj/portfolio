@@ -16,9 +16,11 @@ The codebase for my personal portfolio. Designed to showcase my journey as a 2nd
 **FRONTEND:** 
 
 React | TypeScript | Tailwind CSS
+
 **MOTION & 3D:**
 
 Framer Motion | Spline
+
 **DEPLOYMENT:**
 
 Vercel
